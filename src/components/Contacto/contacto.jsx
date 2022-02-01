@@ -67,7 +67,7 @@ const Contacto = () => {
                 }}
 
                 onSubmit={(valores, {resetForm}, setSubmitting, setStatus) =>{
-                    axios.post('http://localhost:8080/contacto', {
+                    axios.post('https://experienciasalta-backend.herokuapp.com/contacto', {
                         empresa: valores.empresa,
                         correo: valores.correo,
                         rubro: valores.rubro,
