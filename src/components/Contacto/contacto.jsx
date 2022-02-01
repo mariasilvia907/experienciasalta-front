@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field, ErrorMessage} from 'formik';
 import Footer from '../Home/Footer';
 import Navbar from '../Home/Navbar';
 import './contacto.css'
+import axios from 'axios';
 
 const Contacto = () => {
 
@@ -65,7 +66,27 @@ const Contacto = () => {
 
                 }}
 
-                onSubmit={(valores, {resetForm}) =>{
+                onSubmit={(valores, {resetForm}, setSubmitting, setStatus) =>{
+                    axios.post('http://localhost:8080/contacto', {
+                        empresa: valores.empresa,
+                        correo: valores.correo,
+                        rubro: valores.rubro,
+                        mensaje:valores.mensaje
+                })
+                .then(res => {
+                    if (res.status === 200) {
+                          setStatus({
+                          sent: true,
+                          respuesta: "Contacto Enviado"
+                        })
+                    }
+                })
+                .catch(err => {
+                    setStatus({
+                        sent:false,
+                        respuesta:"Error al mandar mensaje"
+                    })
+                })
                     resetForm();
                     console.log(valores);
                     console.log('Formulario enviado');
@@ -73,7 +94,7 @@ const Contacto = () => {
                     setTimeout(() => setContactoEnviado(false), 5000);
                 }}
             >
-                {({errors}) => (
+                {({values, errors}) => (
 			<Form className="formulario">
                 {console.log(errors)}
 				<div>
