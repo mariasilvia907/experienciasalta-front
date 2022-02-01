@@ -14,7 +14,7 @@ const SumarExperiencias = () => {
                             <p className="color-azul">
                                 Hacé que los viajeros elijan tus productos o servicios cuando lleguen a Salta. 
                             </p>
-                            <a className="btn btn-primary bg-naranja color-azul" href="/contacto" target="_blank">Quiero sumar mi Experiencia</a>
+                            <a className="btn btn-primary bg-naranja color-azul" href="/contacto">Quiero sumar mi Experiencia</a>
                             {/* <p className="color-azul  mt-5">
                                 Hacé que tus reseñas guíen a otros viajeros y obtené beneficios. 
                             </p>

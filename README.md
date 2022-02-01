@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+Experiencia Salta - Viajá antes de viajar
+Stack
+El proyecto está armado con React. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Se compone por:
 
-## Available Scripts
+Sitio web
+https://experienciasalta-frontend.herokuapp.com/
 
-In the project directory, you can run:
 
-### `npm start`
+REST API
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Keywords: React, Express, API, MongoDB, Heroku
 
-### `npm test`
+Levantar el proyecto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para levantar el proyecto de manera local:
 
-### `npm run build`
+Descargar de repositorios:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://github.com/mariasilvia907/experienciasalta-front
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+https://github.com/mariasilvia907/experienciasalta-back
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ejecutar el comando npm i para la descarga de las dependencias usadas.
 
-### `npm run eject`
+El servicio que consume el proyecto funciona con una DB deployada en Atlas y Heroku.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Uso de API
+Se recomienda el uso de Postman para probar el funcionamiento y la conexión con los servicios.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Momentaneamente se usan las acciones GET y POST únicamente.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Website
+El sitio Web se encuentra deployado en Heroku
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+https://experienciasalta-frontend.herokuapp.com/
 
-## Learn More
+Para uso local, una vez corriendo el servicio, levantar el proyecto alojado en https://github.com/mariasilvia907/experienciasalta-front con los comandos npm start para el funcionamiento de la app de React.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Descripción
+El proyecto cuenta hoy con tres secciones. Se pretende en el corto y mediano plazo desarrollar aún más el sitio web.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+PROYECTO
+Experiencia Salta es un proyecto de sitio web que pretende crecer poco a poco. Surge del proyecto Experiencia Museos de Salta: www.museodesalta.com El proyecto pretende invitar a viajeros y amantes de la cultura a conocer Salta y sus alrededores de manera virtual, primero, y enamorarlos tanto con toda la riqueza cultural para que nos visiten de manera presencial y cuando estén aquí disfruten cada segundo de su viaje.
 
-### Code Splitting
+Perspectiva
+El interés es armar una web en donde muestren experiencias culturales/turísticas diversas realizadas en 360º para comenzar a presentar la identidad del crecimiento del proyecto de EXPERIENCIA MUSEOS DE SALTA hacia EXPERIENCIA SALTA. Existe perspectivas de crecimiento y se quiere armar, a largo plazo, una aplicación, un blog y una dinámica de red social en donde muestren las experiencias en 360º con recomendaciones y contenido cultural de valor en otros tipos de formatos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Aspectos Técnicos
+Se bocetó el proyecto a futuro y se armó un primer prototipo de diseño de la web realizada.
 
-### Analyzing the Bundle Size
+Bootstrap
+Al ser un proyecto con perspectiva de crecimiento, se decide utilizar Bootstrap para el desarrollo, dada que esta tecnología es conocida por muchos/as desarrolladores/as y nos permite realizar cambios de manera simple.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Web - App
+Hoy se prensenta una web pequeña, pero la perspectiva de desarrollo apunta a que mañana se genere una App, un Blog y una dinámica cercana a una red social. 
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Base de Datos
+Se alimenta poco a poco la DB.
